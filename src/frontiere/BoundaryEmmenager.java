@@ -38,7 +38,7 @@ public class BoundaryEmmenager {
 			} while (choixUtilisateur != 1 && choixUtilisateur != 2);
 		}
 	}
-	///FAIRE LES TESTS DANS LE SCENARIO!!!!!!
+	
 
 	private void emmenagerDruide(String nomVisiteur) {
 		int forceVisiteur = 0;
@@ -50,7 +50,7 @@ public class BoundaryEmmenager {
 		effetPotionMin = Clavier.entrerEntier("Quelle est la force de potion la plus faible que vous produisez?\n");
 		effetPotionMax = Clavier.entrerEntier("Quelle est la force de potion la plus forte que vous produisez ?\n");
 		if(effetPotionMin > effetPotionMax) 
-			System.out.println("Attention Duire, vous vous êtes trompé entre le minimum et le maximum\n");
+			System.out.println("Attention Duire, vous vous ï¿½tes trompï¿½ entre le minimum et le maximum\n");
 		} while (effetPotionMin > effetPotionMax);	
 		
 		controlEmmenager.ajouterDuide(nomVisiteur, forceVisiteur, effetPotionMin, effetPotionMax);
