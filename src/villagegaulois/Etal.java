@@ -21,6 +21,10 @@ public class Etal {
 		return quantite;
 	}
 	
+	public void setQuantite(int quantite) {
+		this.quantite = quantite;
+	}
+
 	public int getQuantiteDeb() {
 		return quantiteDebutMarche;
 	}

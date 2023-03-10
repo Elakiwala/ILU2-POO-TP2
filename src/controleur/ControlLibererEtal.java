@@ -26,15 +26,17 @@ public class ControlLibererEtal {
 	public String[] libererEtal(String nomVendeur) {
 		//TODO a completer
 		Etal etal = controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);
-		String[] donneesEtal = new String[5];
-		boolean etalOccupe = true;
+		String[] donneesEtal = etal.etatEtal();
+		etal.libererEtal();
+		/*boolean etalOccupe = true;
 		donneesEtal[0] = String.valueOf(etalOccupe);
 		if (etalOccupe) {
 			donneesEtal[1] = nomVendeur;
 			donneesEtal[2] = etal.getProduit();
 			donneesEtal[3] = String.valueOf(etal.getQuantiteDeb()); //ajout de la méthode getQuantiteDeb() pour avoir le nonbre de produit inital
 			donneesEtal[4] = String.valueOf(etal.getQuantiteDeb() - etal.getQuantite());
-		}
+		}*/
+		
 		return donneesEtal;
 	}
 }
